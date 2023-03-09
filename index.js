@@ -101,7 +101,7 @@ const initialize = async () => {
 
   setInterval(() => {
     botWorker();
-  }, 60000);
+  }, 300000);
 };
 
 initialize();
