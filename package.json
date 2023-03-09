@@ -1,0 +1,17 @@
+{
+  "name": "fup-discord-fb",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://gitlab.futureup.pl/futureup/fup-discord-fb.git",
+  "author": "Sebastian Wilczyński <221seba@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node ./index.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.7.1",
+    "dotenv": "^16.0.3",
+    "fbgraph": "^1.4.4",
+    "nodemon": "^2.0.21"
+  }
+}
