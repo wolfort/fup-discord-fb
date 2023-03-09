@@ -15,8 +15,12 @@ const getFacebookNewestPost = async () => {
       '100248495917269/feed?fields=full_picture,message,permalink_url',
       { limit: 1 },
       function (err, res) {
-        if (err) reject('error occured');
-        else resolve(res.data[0]);
+        if (err) {
+          console.log(err);
+          reject('error occured');
+        } else {
+          resolve(res.data[0]);
+        }
       },
     );
   });
