@@ -33,7 +33,6 @@ const sendMessageToDiscordChannel = message => {
   // when connection is ready -> send message
   client.on('ready', async function () {
     channel = client.channels.cache.get('1082231239248977940');
-    channel.send('@everyone');
 
     const embeddedMessage = new EmbedBuilder()
       .setColor('#fed20a')
@@ -105,7 +104,7 @@ const initialize = async () => {
 
   setInterval(() => {
     botWorker();
-  }, 300000);
+  }, 60000);
 };
 
 initialize();
