@@ -103,7 +103,7 @@ const initialize = async () => {
 
   fs.writeFileSync('./lastFbPost.json', JSON.stringify(newestPost));
 
-  cron.schedule('* * * * *', () => {
+  cron.schedule('*/5 * * * *', () => {
     botWorker();
   });
 };
