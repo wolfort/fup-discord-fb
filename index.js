@@ -99,7 +99,7 @@ const comparePostsFB = async () => {
 const getTikTokNewestVideos = async () => {
   const browser = await puppeteer.launch({
     headless: true,
-    // args: ['--no-sandbox'],
+    args: ['--no-sandbox'],
   });
   const page = await browser.newPage();
 
