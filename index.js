@@ -181,7 +181,7 @@ const initialize = async () => {
 
     cron.schedule('*/5 * * * *', () => {
       comparePostsFB();
-      compareVideosTikTok();
+      //   compareVideosTikTok();
     });
   });
 };
